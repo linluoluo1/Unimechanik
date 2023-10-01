@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <h1><a href="#">NonStop</a></h1>
+        <ul class="nav-ul">
+          <li><a href="#">Main</a></li>
+          <li><a class="call-modal" ="#">Become our partner</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <div>
+          <img
+            src="./img/menu-burger.png"
+            alt="menu-burger"
+            width="30px"
+            class="menu-burger-icon"
+          />
+        </div>
+      </nav>
+      <ul class="menu-burger-ul">
+        <li><a href="#">Main</a></li>
+        <li><a class="call-modal" href="#">Become our partner</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <div>
+        <section class="section-1">
+          <h2>Welcome to the Nonstop Project: Where Change Never Rests!</h2>
+          <p>
+            In a world that never stops evolving, the Nonstop Project is your
+            beacon of hope and action. Our mission is simple yet powerful: to
+            transform our world for the better, one step at a time, and to do it
+            together. We believe in the infinite potential of collective action
+            and the boundless capacity of humanity to make positive change
+            happen.
+          </p>
+        </section>
+        <section class="section-2">
+          <h2>Unwavering Commitment to Progress</h2>
+          <p>
+            At Nonstop, we don't wait for the perfect moment; we create it.
+            Every day, every hour, every minute, we're dedicated to pushing
+            boundaries, challenging norms, and redefining what's possible. We
+            unite dreamers, thinkers, and doers from all corners of the globe,
+            working tirelessly to tackle the most pressing issues of our time:
+            from environmental sustainability to social justice, from healthcare
+            access to educational equity.
+          </p>
+        </section>
+        <section class="section-3">
+          <h2>Together, We Make History</h2>
+          <p>
+            <strong><a class="call-modal" href="#">Join us</a></strong> on this
+            exhilarating journey as we strive to leave an indelible mark on
+            history. Together, we'll prove that change knows no limits, and
+            compassion has no boundaries. Together, we are unstoppable.
+          </p>
+        </section>
+        <button class="btn call-modal">Become our partner</button>
+        <div class="transp-bg"></div>
+
+        <!-- Modal window -->
+        <section class="modal-container">
+          <img
+            src="./img/person.png"
+            alt="close-icon"
+            width="30px"
+            class="close-modal-icon"
+          />
+          <h2 class="form-header">Become our partner</h2>
+          <form
+            class="form"
+            action="upload.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="logo-short-input-wrapper">
+              <div class="form-short-input-container">
+                <div class="required-input-wrapper">
+                  <span class="required-input-span"
+                    ><span>*</span> Company name</span
+                  >
+                  <input
+                    type="text"
+                    class="input-company-name short-input"
+                    placeholder="ABC"
+                    required
+                  />
+                </div>
+                <div class="required-input-wrapper">
+                  <span class="required-input-span"
+                    ><span>*</span> Phone number</span
+                  >
+                  <input
+                    type="tel"
+                    class="input-phone short-input"
+                    placeholder="+7027635-34-34"
+                    required
+                  />
+                </div>
+                <div class="required-input-wrapper">
+                  <span class="required-input-span"><span>*</span> E-mail</span>
+                  <input
+                    type="email"
+                    class="input-email short-input"
+                    placeholder="avc@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-logo-container">
+                <input
+                  type="file"
+                  name="logo"
+                  id="logo"
+                  accept="image/jpeg, image/png"
+                />
+                <label for="logo">
+                  <span class="label-text">
+                    <span class="red">*</span> Logo(jpeg, png)</span
+                  >
+                  <div>
+                    <img
+                      src="./img/imgpreview.jpg"
+                      alt="Preview Image"
+                      width="175px"
+                      class="preview-img"
+                    />
+                    <span class="upload-button"
+                      ><img src="./img/Vector.png" alt="choose-file" />Choose
+                      file</span
+                    >
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="required-input-wrapper">
+              <span class="required-input-span"><span>*</span> Field</span>
+              <input
+                type="text"
+                class="input-field input"
+                placeholder="Eco"
+                required
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img src="./img/Vector (1).png" class="input-img" alt="web" />
+              <input
+                type="text"
+                class="input-company input"
+                placeholder="avc.ru"
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img src="./img/vk 1.png" class="input-img" alt="VK" />
+              <input
+                type="text"
+                class="input-vk input"
+                placeholder="vk.com/shans"
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img
+                src="./img/odnoklassniki 3.png"
+                class="input-img"
+                alt="odnoklassniki"
+              />
+              <input
+                type="text"
+                class="input-ok input"
+                placeholder="ok.com/shans"
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img src="./img/Icon.png" class="input-img" alt="facebook" />
+              <input
+                type="text"
+                class="input-fb input"
+                placeholder="fb.com/shans"
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img
+                src="./img/XMLID 138.png"
+                class="input-img"
+                alt="Instagram"
+              />
+              <input
+                type="text"
+                class="input-inst input"
+                placeholder="instagram.com/shans"
+              />
+            </div>
+            <div class="input-img-wrapper">
+              <img src="./img/youtube 2.png" class="input-img" alt="YouTube" />
+              <input
+                type="text"
+                class="input-yt input"
+                placeholder="youtube.com/shans"
+              />
+            </div>
+            <div class="required-input-wrapper">
+              <span class="required-input-span">Boss</span>
+              <input
+                type="text"
+                class="input-boss input"
+                placeholder="Bob Miller"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Become our partner"
+              class="form-submit-btn"
+            />
+            <button class="form-cancel">Cancel</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <h3>Our services and events 100% accessible for everyone!</h3>
+      <ul class="footer-ul">
+        <li>For parents and kids</li>
+        <li>For differently-abled individuals</li>
+        <li>For parents and kids</li>
+        <li>For differently-abled individuals</li>
+      </ul>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
